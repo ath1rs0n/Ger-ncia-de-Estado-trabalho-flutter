@@ -14,7 +14,7 @@ class MyApp extends StatelessWidget {
 
         primarySwatch: Colors.blue,
       ),
-      home: MyHomePage(title: 'Gerência de Estado'),
+      home: MyHomePage(title: 'Consulta CEP'),
     );
   }
 }

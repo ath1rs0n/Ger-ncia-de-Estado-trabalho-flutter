@@ -19,22 +19,22 @@ class _MyHomePageState extends State<MyHomePage> {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
+    return Scaffold(               //andaime > construir
       appBar: AppBar(
         title: Text(widget.title),
       ),
-      body: Padding(
+      body: Padding(                         //preenchimento
         padding: const EdgeInsets.all(8.0),
         child: Column(
           mainAxisAlignment: MainAxisAlignment.start,
           children: <Widget>[
-            TextField(
+            TextField(                     // campo de texto
               onChanged: (value){
                 bloc.input.add(value);
-              }, decoration: InputDecoration(
+              }, decoration: InputDecoration(    // Decoração de Entrada
                 hintText: "Digite seu CEP",
-                border: OutlineInputBorder()
-              ),
+                border: OutlineInputBorder()     // Contorno da entrada
+            ),
             ),
             Center(
               child: StreamBuilder<EnderecoModel>(

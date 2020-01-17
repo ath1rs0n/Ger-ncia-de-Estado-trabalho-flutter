@@ -14,7 +14,7 @@ class MyHomePageBloc{
   String url(String cep) => "https://viacep.com.br/ws/$cep/json/";
 
 
-  Future<EnderecoModel> _seachCep(String cep) async{
+  Future<EnderecoModel> _seachCep(String cep) async{  //buscar dados da internet
     Response response = await Dio().get(url(cep));
    return EnderecoModel.fromJson(response.data);
 

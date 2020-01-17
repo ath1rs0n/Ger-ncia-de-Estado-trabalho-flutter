@@ -33,7 +33,7 @@ class EnderecoModel {
     gia = json ['gia'];
   }
 
-  Map<String, dynamic> toJson(){
+  Map<String, dynamic> toJson(){                   //para json
     final Map<String, dynamic> data = new Map<String, dynamic>();
     data['cep'] = this.cep;
     data['logradouro'] = this.logradouro;
